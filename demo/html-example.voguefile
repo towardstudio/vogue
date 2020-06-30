@@ -1,0 +1,12 @@
+{
+	"title": "My HTML Vogue Styleguide",
+	"lang": "html",
+	"templatePath": "./html",
+	"includeDir": "./",
+	"outputDir": "./html/web",
+	"outputFile": "vogue.html",
+	"css": "/path/to/styles.css",
+	"js": "path/to/js.js",
+	"headScript": "",
+	"footScript": ""
+}

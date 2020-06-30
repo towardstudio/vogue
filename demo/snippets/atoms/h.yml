@@ -1,0 +1,31 @@
+title: Heading
+about: This is some text about the thing
+data:
+  el: p
+  text: Heading
+types:
+  -
+    name: H1
+    data:
+      classes: 
+        - h1
+      el: h1
+  -
+    name: H2
+    data:
+      classes: 
+        - h2
+      el: h2
+  -
+    name: H3
+    data:
+      classes: 
+        - h3
+      el: h3
+  -
+    name: H4
+    data:
+      classes: 
+        - h4
+      el: h4
+

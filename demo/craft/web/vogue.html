@@ -1,0 +1,157 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Craft Vogue Styleguide</title>
+		
+		<link rel="stylesheet" href="/styles/styles.min.css">
+
+		<style>
+		html { box-sizing: border-box }
+*, *:before, *:after { box-sizing: inherit }
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, blockquote, address { margin: 0; padding: 0 }
+
+:root {
+	--font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--foreground-color: #333;
+	--background-color: #fff;
+	--highlight-color: #345bfb;
+	--border-color: #333;
+}		
+html {
+	font-family: var(--font-stack);
+	background: var(--background-color);
+	color: var(--foreground-color);
+}
+.vogue-body {
+	max-width: 90em;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
+.vogue-h1 + *, 
+.vogue-h2 + *, 
+.vogue-h3 + * {
+	margin-top: .5rem;
+} 
+
+.vogue-h3 {
+	opacity: .75;
+}
+.vogue-header {
+	margin: 2em 0;
+}
+.vogue-component {
+	margin: 2em 0;
+}
+.vogue-component + .vogue-component {
+	border-top: 1px solid var(--border-color);
+	padding-top: 2em;
+}
+
+.vogue-type {
+	margin: 2em 0;
+}
+
+.vogue-component-wrap {
+	margin-top: 1em;
+}
+
+.vogue-footer {
+	margin: 2em 0;
+}
+/styles/styles.min.css
+		</style>
+	</head>
+	<body class="vogue-body">
+	
+	<header class="vogue-header">
+		<h1 class="vogue-h1">My Craft Vogue Styleguide</h1>
+	</header>	
+	<main>
+	<div class="vogue-component">
+				<h2 class="vogue-h2">Button</h2>
+				<p class="vogue-p">This is some text about the thing</p>
+				<div class="vogue-type">
+					<h3 class="vogue-h3">Regular</h3>
+						<p class="vogue-p">This is a regular button</p>
+						<div class="vogue-component-wrap">
+							<button type="button" class="btn">This is a button</button>
+						</div>
+					</div>
+<div class="vogue-type">
+					<h3 class="vogue-h3">Primary</h3>
+						
+						<div class="vogue-component-wrap">
+							<button type="button" class="btn primary">This is a button</button>
+						</div>
+					</div>
+<div class="vogue-type">
+					<h3 class="vogue-h3">Disabled</h3>
+						
+						<div class="vogue-component-wrap">
+							<button type="button" disabled class="btn">This is a button</button>
+						</div>
+					</div>
+			</div>
+<div class="vogue-component">
+				<h2 class="vogue-h2">Heading</h2>
+				<p class="vogue-p">This is some text about the thing</p>
+				<div class="vogue-type">
+					<h3 class="vogue-h3">H1</h3>
+						
+						<div class="vogue-component-wrap">
+							<h1 class="h h1">Heading</h1>
+						</div>
+					</div>
+<div class="vogue-type">
+					<h3 class="vogue-h3">H2</h3>
+						
+						<div class="vogue-component-wrap">
+							<h2 class="h h2">Heading</h2>
+						</div>
+					</div>
+<div class="vogue-type">
+					<h3 class="vogue-h3">H3</h3>
+						
+						<div class="vogue-component-wrap">
+							<h3 class="h h3">Heading</h3>
+						</div>
+					</div>
+<div class="vogue-type">
+					<h3 class="vogue-h3">H4</h3>
+						
+						<div class="vogue-component-wrap">
+							<h4 class="h h4">Heading</h4>
+						</div>
+					</div>
+			</div>
+<div class="vogue-component">
+				<h2 class="vogue-h2">Test</h2>
+				<p class="vogue-p">This is some text about the TEST</p>
+				<div class="vogue-type">
+					
+						
+						<div class="vogue-component-wrap">
+							<div>
+
+	<h2>This is a test</h2>
+
+	<button class="btn">nested btn</button>
+</div>
+						</div>
+					</div>
+			</div>
+	</main>
+	<footer class="vogue-footer">
+
+	<p><small>&copy; 2020</small></p>
+
+</footer>
+	
+	<script src="/scripts/app.min.js"></script>
+	</body>
+	</html>
+	

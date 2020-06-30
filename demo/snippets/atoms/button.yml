@@ -1,0 +1,22 @@
+title: Button
+about: This is some text about the thing
+data:
+  text: This is a button
+  attributes: 
+    - type="button"
+  el: button
+types:
+  -
+    name: Regular
+    about: This is a regular button
+  -
+    name: Primary
+    data:
+      classes: 
+        - primary
+  -
+    name: Disabled
+    data:
+      attributes: 
+        - disabled
+

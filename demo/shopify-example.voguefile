@@ -1,0 +1,12 @@
+{
+	"title": "My Store Vogue Styleguide",
+	"lang": "liquid",
+	"templatePath": "./snippets",
+	"includeDir": "./",
+	"outputDir": "./templates",
+	"outputFile": "page.vogue.liquid",
+	"css": "https://mystore.myshopify.com/path/to/style.min.css",
+	"js": "https://mystore.myshopify.com/path/to/app.min.js",
+	"headScript": "",
+	"footScript": ""
+}

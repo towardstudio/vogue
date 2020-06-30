@@ -1,0 +1,11 @@
+{
+	"title": "My Craft Vogue Styleguide",
+	"lang": "twig",
+	"templatePath": "./craft/templates/_partials",
+	"outputDir": "./craft/web",
+	"outputFile": "page.vogue.liquid",
+	"css": "/styles/styles.min.css",
+	"js": "/scripts/app.min.js",
+	"headScript": "",
+	"footScript": ""
+}
