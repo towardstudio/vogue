@@ -1,8 +1,9 @@
 {
-  "name": "vogue",
+  "name": "vogue-cli",
   "version": "0.0.1",
-  "description": "Strike a pose",
-  "main": "index.js",
+  "description": "Basic styleguide generator.",
+	"main": "index.js",
+	"repository": "github:bluegg/vogue",
   "bin": {
     "vogue": "./bin/index.js"
   },

@@ -30,7 +30,7 @@ There's examples in the `demo` directory.
 ## Installation
 
 ```shell
-npm i -g vogue -D
+npm i -g vogue-cli
 ```
 
 ## Usage
