@@ -2,7 +2,7 @@
 
 Simple styleguide generation. 
 
-**Very much a work in progress. I do not recommend you use this. Please refer to the Disclaimer**
+⚠️ **Very much a work in progress. I do not recommend you use this. Please refer to the Disclaimer** ⚠️
 
 
 ## What is this?
@@ -45,21 +45,21 @@ vogue
  Your project title.
 
  ```
-	title : STRING | 'Vogue'
+title : STRING | 'Vogue'
 ```
 
 ### Lang
 The template language you are using (currently, `twig`, `liquid`, or `html`)
 
 ```
-	lang : STRING | 'twig'
+lang : STRING | 'twig'
 ```
 
 ### Template Path
 The path to you components (relative to the `.voguefile`)
 
 ```
-	templatePath : STRING/PATH | './'
+templatePath : STRING/PATH | './'
 ```
 
 ### Output File
@@ -67,80 +67,81 @@ The path to you components (relative to the `.voguefile`)
 The file that Vogue will create
 
 ```
-	outputFile: STRING | 'vogue.html'
+outputFile: STRING | 'vogue.html'
 ```
 
 ### Output Dir
 Where vogue should build the file (e.g. your `public` folder)
 
 ```
-	outputDir : STRING/PATH | ''
+outputDir : STRING/PATH | ''
 ```
 
 ### CSS
 Path to your CSS file (relative to output Dir)
 ```
-	css : STRING/PATH | ''
+css : STRING/PATH | ''
 ```
 
 ### JS
 Path to your JS file (relative to output Dir)
 ```
-	js : STRING/PATH | ''
+js : STRING/PATH | ''
 ```
 
 ### Head Scripts
 JS to include in the head. You will need to include `<script>` tags. This allows you to reference external JS files
 
 ```
-	headScript : STRING/JS | ''
+headScript : STRING/JS | ''
 ```
 
 ### Foot Scripts
 JS to include in the foot. You will need to include `<script>` tags. This allows you to reference external JS files. (added _before_ the main JS)
 
 ```
-	footScript : STRING/JS | ''
+footScript : STRING/JS | ''
 ```
 
 ### Font Stack
 The `font-family` CSS property value that Vogue should use. e.g. 'Comic Sans' 
 ```
-	fontStack: : STRING/CSS | '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+fontStack: : STRING/CSS | '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
 ```
 
 ### Foreground Color
 The foreground color (e.g. Text). Accepts any valid `CSS` color value
 
 ```
-	foregroundColor : STRING/CSS | '#333'
+foregroundColor : STRING/CSS | '#333'
 ```
 
 ### Background color
 The background color. Accepts any valid `CSS` color value
 
 ```
-	backgroundColor : STRING/CSS | '#fff'
+backgroundColor : STRING/CSS | '#fff'
 ```
 
 ### Highlight Color 
 The highlight color (e.g. for links). Accepts any valid `CSS` color value
 
 ```
-	highlightColor : STRING/CSS | '#345bfb'
+highlightColor : STRING/CSS | '#345bfb'
 ```
 
 ### Border Color 
 The border color (you get the idea)
+
 ```
-	borderColor : STRING/CSS | '#333'
+borderColor : STRING/CSS | '#333'
 ```
 
 ### CSS Override
 CSS inserted inside a style block, just in case you want more control over how the vogue file looks.
 
 ```
-	cssOverride : STRING/CSS | '' 
+cssOverride : STRING/CSS | '' 
 ```
 
 ## YAML File
@@ -163,6 +164,8 @@ data:
     - type="button"
     el: button
 ```
+
+_NOTE: Data doesn't work with `HTML` files, just like in real life._
 
 Most components will have several states or types. For example, a `button` component might have `regular`, and `primary` variants and a `disabled` state. You can tell vogue about these using a `types` array:
 
