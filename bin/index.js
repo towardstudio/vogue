@@ -9,6 +9,7 @@ const YAML = require('yaml');
 const { Liquid } = require('liquidjs');
 const merge = require('deepmerge');
 const {TwingEnvironment, TwingLoaderFilesystem} = require('twing');
+const ora = require('ora');
 
 // Local
 const getFiles = require('./get-files.js');
@@ -42,13 +43,15 @@ const engine = new Liquid({
 	extname: '.liquid'          
 });
 
-
 let ymlFiles;
 let componentFiles;
+const spinner = ora('Strike a pose...')
 
 getFiles(DIR, 'yml')
 	.then((data) => ymlFiles = data)
 	.then(() => {
+		console.log('Strike a pose...');
+		spinner.start();
 		componentFiles = ymlFiles.map((file) => {
 			return file.replace('.yml', `.${EXT}`)
 		})
@@ -76,7 +79,9 @@ getFiles(DIR, 'yml')
 	.then(html => {
 		fs.writeFile(`${OUTPUT_DIR}/${OUTPUT_FILE}`, fillHTML(html), function (err) {
 			if (err) return console.log(err);
-			console.log('vogue done');
+			spinner.stop();
+			console.log(`${OUTPUT_FILE} created in ${OUTPUT_DIR}`);
+			console.log(`Vogue done.`);
 		});
 	});
 
