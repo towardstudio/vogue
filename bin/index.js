@@ -29,7 +29,7 @@ const FOREGROUND_COLOR = CONFIG.foregroundColor || '#333';
 const BACKGROUND_COLOR = CONFIG.backgroundColor || '#fff';
 const HIGHLIGHT_COLOR = CONFIG.highlightColor || '#345bfb';
 const BORDER_COLOR = CONFIG.borderColor || '#333';
-const CSS = CONFIG.css || '';
+const CSS = CONFIG.cssOverride || '';
 
 // TWIG
 let loader = new TwingLoaderFilesystem(['./', DIR]);
@@ -222,8 +222,10 @@ ${CSS}
 
 	<p><small>&copy; ${new Date().getFullYear()}</small></p>
 
-</footer>
-	${FOOT_SCRIPT}
+	</footer>
+	
+		${FOOT_SCRIPT}
+
 	<script src="${SCRIPT}"></script>
 	</body>
 	</html>
