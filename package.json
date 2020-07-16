@@ -1,9 +1,9 @@
 {
   "name": "vogue-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Basic styleguide generator.",
-	"main": "index.js",
-	"repository": "github:bluegg/vogue",
+  "main": "index.js",
+  "repository": "github:bluegg/vogue",
   "bin": {
     "vogue": "./bin/index.js"
   },
